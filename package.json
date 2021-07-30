@@ -4,7 +4,9 @@
   "description": "You can easily handle the prefectures of Japan.",
   "main": "jpPrefectures.js",
   "scripts": {
-    "test": "jest"
+    "test": "jest",
+    "lint": "eslint",
+    "lint:fix": "eslint --fix"
   },
   "repository": {
     "type": "git",
@@ -19,7 +21,9 @@
   "license": "ISC",
   "devDependencies": {
     "@types/jest": "^26.0.24",
+    "@typescript-eslint/eslint-plugin": "^4.28.5",
     "eslint": "^7.31.0",
+    "eslint-config-prettier": "^8.3.0",
     "eslint-plugin-prettier": "^3.4.0",
     "jest": "^27.0.6",
     "prettier": "^2.3.2",
