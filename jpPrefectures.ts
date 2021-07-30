@@ -1,47 +1,46 @@
-'use strict'
+import { Prefecture } from './interfaces';
 
-const prefs = require('./data/prefectures.json');
+const prefs: Prefecture[] = require('');
 
-function findByName(value) {
+function findByName(value: string): Prefecture | undefined{
   return prefs.find(pref => pref.name === value);
 }
 
-function findByCode(value) {
+function findByCode(value: string | number): Prefecture | undefined {
   return prefs.find(pref => pref.code === Number(value));
 }
 
-function filterByArea(value) {
+function filterByArea(value: string): Prefecture[] {
   return prefs.filter(pref => pref.area === value);
 }
 
-function prefectures() {
+function prefectures(): Prefecture[] {
   return prefs;
 }
 
-function prefectureCodes() {
+function prefectureCodes(): number[] {
   return prefs.map(pref => pref.code);
 }
 
-function prefectureNames() {
+function prefectureNames(): string[] {
   return prefs.map(pref => pref.name);
 }
 
-function prefectureEnNames() {
+function prefectureEnNames(): string[] {
   return prefs.map(pref => pref.enName);
 }
 
-function prefectureAreas() {
-  const onlyUnique = (value, index, self) => {
+function prefectureAreas(): string[] {
+  const onlyUnique = (value: string, index: number, self: string[]) => {
     return self.indexOf(value) === index;
   }
   const areas = prefs.map(pref => pref.area);
   return areas.filter(onlyUnique);
 }
 
-function prefectureCapitals() {
+function prefectureCapitals(): string[] {
   return prefs.map(pref => pref.capital);
 }
-
 
 module.exports = {
   findByName,
