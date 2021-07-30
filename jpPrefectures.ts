@@ -1,6 +1,5 @@
-import { Prefecture } from './interfaces';
-
-const prefs: Prefecture[] = require('./data/prefectures');
+import { Prefecture } from "./interfaces";
+import prefs from "./data/prefectures.json";
 
 function findByName(value: string): Prefecture | undefined{
   return prefs.find(pref => pref.name === value);
@@ -33,7 +32,7 @@ function prefectureEnNames(): string[] {
 function prefectureAreas(): string[] {
   const onlyUnique = (value: string, index: number, self: string[]) => {
     return self.indexOf(value) === index;
-  }
+  };
   const areas = prefs.map(pref => pref.area);
   return areas.filter(onlyUnique);
 }
@@ -42,7 +41,7 @@ function prefectureCapitals(): string[] {
   return prefs.map(pref => pref.capital);
 }
 
-module.exports = {
+export {
   findByName,
   findByCode,
   filterByArea,
@@ -52,4 +51,4 @@ module.exports = {
   prefectureEnNames,
   prefectureAreas,
   prefectureCapitals,
-}
+};

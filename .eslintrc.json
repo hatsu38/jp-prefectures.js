@@ -1,0 +1,38 @@
+{
+  "env": {
+    "node": true,
+    "jest": true,
+    "browser": true
+  },
+  "extends": [
+    "eslint:recommended",
+    "plugin:@typescript-eslint/eslint-recommended",
+    "plugin:@typescript-eslint/recommended",
+    "prettier"
+  ],
+  "rules": {
+    // 0は無効、1は警告、2はエラー
+    "indent": ["error", 2,
+      {"SwitchCase": 1}
+    ], // インデントはSpaceを2個
+    "prefer-const": "error", // 再代入を行わない変数はconstを利用
+    "quotes": ["error", "double"], // ダブルクオーテーションで文字列を囲う
+    "semi": ["error", "always"], // セミコロンを必須にする
+    "no-var": "error", // var禁止
+    "no-unused-vars": "error", // 使用していない変数を削除
+    "no-debugger": "error", // デバッガーは残さない
+    "@typescript-eslint/no-explicit-any": "off"
+  },
+  "settings": {
+    "react": {
+      "version": "detect",
+      "import/resolver": {
+        "node": {
+          "paths": ["src"],
+          "extensions": [".js", ".jsx", ".ts", ".tsx"],
+          "moduleDirectory": ["node_modules", "/"]
+        }
+      }
+    }
+  }
+}
