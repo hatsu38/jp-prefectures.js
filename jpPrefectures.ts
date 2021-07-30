@@ -1,6 +1,6 @@
 import { Prefecture } from './interfaces';
 
-const prefs: Prefecture[] = require('');
+const prefs: Prefecture[] = require('./data/prefectures');
 
 function findByName(value: string): Prefecture | undefined{
   return prefs.find(pref => pref.name === value);
