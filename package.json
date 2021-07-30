@@ -1,0 +1,20 @@
+{
+  "name": "jpPrefectures",
+  "version": "1.0.0",
+  "description": "You can easily handle the prefectures of Japan.",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "jpPrefectures"
+  },
+  "keywords": [
+    "Prefectures",
+    "of",
+    "Japan."
+  ],
+  "author": "hatsu38",
+  "license": "ISC"
+}
