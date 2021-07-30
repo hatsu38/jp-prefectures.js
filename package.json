@@ -2,7 +2,7 @@
   "name": "jpPrefectures",
   "version": "1.0.0",
   "description": "You can easily handle the prefectures of Japan.",
-  "main": "index.js",
+  "main": "jpPrefectures.js",
   "scripts": {
     "test": "jest"
   },
