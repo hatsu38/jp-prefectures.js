@@ -16,5 +16,8 @@
     "Japan."
   ],
   "author": "hatsu38",
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {
+    "jest": "^27.0.6"
+  }
 }
