@@ -2,15 +2,15 @@ import { Prefecture } from "./interfaces";
 import prefs from "./data/prefectures.json";
 
 function findByName(value: string): Prefecture | undefined{
-  return prefs.find(pref => pref.name === value);
+  return prefs.find((pref: Prefecture) => pref.name === value);
 }
 
 function findByCode(value: string | number): Prefecture | undefined {
-  return prefs.find(pref => pref.code === Number(value));
+  return prefs.find((pref: Prefecture) => pref.code === Number(value));
 }
 
 function filterByArea(value: string): Prefecture[] {
-  return prefs.filter(pref => pref.area === value);
+  return prefs.filter((pref: Prefecture) => pref.area === value);
 }
 
 function prefectures(): Prefecture[] {
@@ -18,27 +18,27 @@ function prefectures(): Prefecture[] {
 }
 
 function prefectureCodes(): number[] {
-  return prefs.map(pref => pref.code);
+  return prefs.map((pref: Prefecture) => pref.code);
 }
 
 function prefectureNames(): string[] {
-  return prefs.map(pref => pref.name);
+  return prefs.map((pref: Prefecture) => pref.name);
 }
 
 function prefectureEnNames(): string[] {
-  return prefs.map(pref => pref.enName);
+  return prefs.map((pref: Prefecture)=> pref.enName);
 }
 
 function prefectureAreas(): string[] {
-  const onlyUnique = (value: string, index: number, self: string[]) => {
+  const onlyUnique = (value: string, index: number, self: string[]): boolean => {
     return self.indexOf(value) === index;
   };
-  const areas = prefs.map(pref => pref.area);
+  const areas = prefs.map((pref: Prefecture) => pref.area);
   return areas.filter(onlyUnique);
 }
 
 function prefectureCapitals(): string[] {
-  return prefs.map(pref => pref.capital);
+  return prefs.map((pref: Prefecture)=> pref.capital);
 }
 
 export {
