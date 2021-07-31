@@ -1,7 +1,14 @@
-import { Prefecture } from "./interfaces";
-import prefs from "./data/prefectures.json";
+import prefs from "../data/prefectures.json";
 
-function findByName(value: string): Prefecture | undefined{
+interface Prefecture {
+  code: number;
+  name: string;
+  enName: string;
+  area: string;
+  capital: string;
+}
+
+function findByName(value: string): Prefecture | undefined {
   return prefs.find((pref: Prefecture) => pref.name === value);
 }
 
