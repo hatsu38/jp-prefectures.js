@@ -9,7 +9,7 @@ import {
   prefectureEnNames,
   prefectureAreas,
   prefectureCapitals,
-} from "../src/jpPrefectures";
+} from "../src/jp-prefectures";
 
 test("findByName", () => {
   expect(findByName("北海道")).toBe(data[0]);

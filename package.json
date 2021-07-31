@@ -2,8 +2,8 @@
   "name": "jp-prefectures",
   "version": "1.0.0",
   "description": "You can easily handle the prefectures of Japan.",
-  "main": "./dist/src/jpPrefectures.js",
-  "types": "./dist/src/jpPrefectures.d.ts",
+  "main": "./dist/src/jp-prefectures.js",
+  "types": "./dist/src/jp-prefectures.d.ts",
   "scripts": {
     "build": "tsc --project tsconfig.json",
     "test": "jest",
