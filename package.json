@@ -1,6 +1,6 @@
 {
   "name": "jp-prefectures",
-  "version": "1.0.0",
+  "version": "0.0.1",
   "description": "You can easily handle the prefectures of Japan.",
   "main": "./dist/src/jp-prefectures.js",
   "types": "./dist/src/jp-prefectures.d.ts",
@@ -8,7 +8,9 @@
     "build": "tsc --project tsconfig.json",
     "test": "jest",
     "lint": "eslint",
-    "lint:fix": "eslint --fix"
+    "lint:fix": "eslint --fix",
+    "prepare": "npm run build",
+    "prepublishOnly": "npm run test && npm run lint"
   },
   "repository": {
     "type": "git",
@@ -17,12 +19,12 @@
   "keywords": [
     "Prefectures",
     "Japan",
-    "JpPrefectures"
+    "jp-prefectures"
   ],
   "author": "hatsu38",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/annexare/Countries/issues"
+    "url": "https://github.com/hatsu38/jpPrefectures/issues"
   },
   "devDependencies": {
     "@types/jest": "^26.0.24",
