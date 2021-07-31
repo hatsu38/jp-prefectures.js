@@ -10,6 +10,7 @@
     "plugin:@typescript-eslint/recommended",
     "prettier"
   ],
+  "ignorePatterns": ["dist/**"],
   "rules": {
     // 0は無効、1は警告、2はエラー
     "indent": ["error", 2,
