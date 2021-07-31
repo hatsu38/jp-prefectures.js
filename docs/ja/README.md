@@ -3,11 +3,11 @@
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![npm version](https://badge.fury.io/js/jp-prefectures.svg)](https://badge.fury.io/js/jp-prefectures)
 
-English | [日本語](./docs/ja/README.md)
+[English](../../README.md) | 日本語
 
-This is a package that allows you to easily handle information about prefectures in Japan.
+日本の都道府県情報を簡単に扱うことができるパッケージです。
 
-## Install
+## インストール
 
 The library is available as an [npm package](https://www.npmjs.com/package/jp-prefectures).
 
@@ -20,7 +20,7 @@ or
 yarn add jp-prefectures
 ```
 
-## Usage
+## 使い方
 
 ```javascript
 import {
@@ -35,15 +35,15 @@ import {
   prefectureCapitals,
 } from "jp-prefectures";
 
-// search prefecture by kanji
+// 都道府県名(漢字)から都道府県を検索できます
 findByName("北海道");
 //=> {code: 1, name: "北海道", enName: "hokkaido", area: "北海道", capital: "札幌市"}
 
-// search prefecture by prefecture code
+// 都道府県コードから都道府県を検索できます
 findByCode(13);
 //=> {code: 13, name: "東京都", enName: "tokyo", area: "関東", capital: "新宿区"}
 
-// search prefectures by area kanji
+// 地方名の漢字で都道府県の絞り込みができます。
 filterByArea("関東")
 /*
 => [
@@ -54,7 +54,7 @@ filterByArea("関東")
 ]
 */
 
-// All prefectues
+// すべての都道府県一覧
 prefectures()
 /*
 =>
@@ -66,36 +66,37 @@ prefectures()
 ]
 */
 
-// All prefectues code
+// すべての都道府県コード一覧
 prefectureCodes()
 //=> [1, 2, ..., 47]
 
-// All prefectues name
+// すべての都道府県名一覧
 prefectureNames()
 //=> ["北海道", "青森県", ..., "沖縄県"]
 
-// All prefectues english name
+// すべての都道府県英語名一覧
 prefectureEnNames()
 //=> ["hokkaido", "aomori", ..., "okinawa"]
 
-// All prefectues area name
+// すべての都道府県地方一覧
 prefectureAreas()
 //=> ["北海道", "東北", ..., "九州"]
 
-// All prefectues capital name
+// すべての県庁所在地名一覧
 prefectureCapitals()
 //=> ["札幌市", "青森市", ..., "那覇市"]
 ```
 
-## Contributing
-I'm looking forward to your bug reports and requests for new features!
+## 貢献
+バグの報告や新機能のリクエストをお待ちしています。
 
-You can also open an issue or comment on an issue on github and a maintainer([@hatsu38](https://github.com/hatsu38)) will reply to you.
+また、github上で課題を作成したり、課題にコメントしていただければ、メンテナー([@hatsu38](https://github.com/hatsu38))が返信します。
 
-It would be my pleasure to star this repository!
+このリポジトリにスターをつけていただけると喜びます！
 
-If you have any concerns, please contact us at ↓.
+連絡は↓のTwitterにお問い合わせください。
 
 [https://twitter.com/hatsu_38](https://twitter.com/hatsu_38)
-## License
-This code is free to use under the terms of the MIT license.
+
+## ライセンス
+このコードは、MITライセンスに基づいて自由に使用することができます。

@@ -1,6 +1,6 @@
 {
   "name": "jp-prefectures",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "description": "You can easily handle the prefectures of Japan.",
   "main": "./dist/src/jp-prefectures.js",
   "types": "./dist/src/jp-prefectures.d.ts",
@@ -17,7 +17,7 @@
   ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/hatsu38/jpPrefectures.git"
+    "url": "https://github.com/hatsu38/jp-prefectures.js"
   },
   "keywords": [
     "Prefectures",
@@ -27,7 +27,7 @@
   "author": "hatsu38",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/hatsu38/jpPrefectures/issues"
+    "url": "https://github.com/hatsu38/jp-prefectures.js/issues"
   },
   "devDependencies": {
     "@types/jest": "^26.0.24",
