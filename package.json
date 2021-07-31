@@ -1,5 +1,5 @@
 {
-  "name": "jpPrefectures",
+  "name": "jp-prefectures",
   "version": "1.0.0",
   "description": "You can easily handle the prefectures of Japan.",
   "main": "./dist/src/jpPrefectures.js",
