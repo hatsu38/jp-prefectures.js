@@ -1,6 +1,6 @@
 {
   "name": "jp-prefectures",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "You can easily handle the prefectures of Japan.",
   "main": "./dist/src/jp-prefectures.js",
   "types": "./dist/src/jp-prefectures.d.ts",
@@ -12,7 +12,9 @@
     "prepare": "npm run build",
     "prepublishOnly": "npm run test && npm run lint"
   },
-  "files": ["./dist/"],
+  "files": [
+    "./dist/"
+  ],
   "repository": {
     "type": "git",
     "url": "https://github.com/hatsu38/jpPrefectures.git"
