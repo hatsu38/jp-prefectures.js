@@ -97,5 +97,15 @@ It would be my pleasure to star this repository!
 If you have any concerns, please contact us at ↓.
 
 [https://twitter.com/hatsu_38](https://twitter.com/hatsu_38)
+
+## Deploy
+
+```sh
+npm version (patch | mainer | major)
+git tag
+git push origin $TAG_VERSION
+git release $TAG_VERSION
+```
+
 ## License
 This code is free to use under the terms of the MIT license.

@@ -98,5 +98,14 @@ prefectureCapitals()
 
 [https://twitter.com/hatsu_38](https://twitter.com/hatsu_38)
 
+## デプロイ
+
+```sh
+npm version (patch | mainer | major)
+git tag
+git push origin $TAG_VERSION
+git release $TAG_VERSION
+```
+
 ## ライセンス
 このコードは、MITライセンスに基づいて自由に使用することができます。
