@@ -31,7 +31,7 @@ jobs:
             ${{ runner.os }}-node${{ matrix.node-version }}-${{ hashFiles('./package-lock.json') }}
 
       - name: Install
-        run: npm ci --prefer-offline --no-audit --no-optional --ignore-scripts
+        run: npm ci --prefer-offline --no-audit --no-optional
         env:
           CI: true
 
