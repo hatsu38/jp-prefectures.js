@@ -101,10 +101,14 @@ prefectureCapitals()
 ## デプロイ
 
 ```sh
-npm version (patch | mainer | major)
-git tag
-git push origin $TAG_VERSION
-git release $TAG_VERSION
+$ npm version (patch | mainer | major)
+$ git tag
+$ git push origin $TAG_VERSION
+$ gh release create v1.0.5
+? Title (optional) v1.0.5
+? Release notes Write my own
+? Is this a prerelease? No
+? Submit? Publish release
 ```
 
 ## ライセンス

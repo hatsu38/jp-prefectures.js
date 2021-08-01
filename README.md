@@ -101,10 +101,14 @@ If you have any concerns, please contact us at ↓.
 ## Deploy
 
 ```sh
-npm version (patch | mainer | major)
-git tag
-git push origin $TAG_VERSION
-git release $TAG_VERSION
+$ npm version (patch | mainer | major)
+$ git tag
+$ git push origin $TAG_VERSION
+$ gh release create $TAG_VERSION
+? Title (optional) $TAG_VERSION
+? Release notes Write my own
+? Is this a prerelease? No
+? Submit? Publish release
 ```
 
 ## License
