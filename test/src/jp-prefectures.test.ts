@@ -1,4 +1,5 @@
-import data from "../data/prefectures.json";
+import data from "../../data/prefectures.json";
+
 import {
   findByName,
   findByCode,
@@ -9,7 +10,7 @@ import {
   prefectureEnNames,
   prefectureAreas,
   prefectureCapitals,
-} from "../src/jp-prefectures";
+} from "../../src/jp-prefectures";
 
 test("findByName", () => {
   expect(findByName("北海道")).toBe(data[0]);
