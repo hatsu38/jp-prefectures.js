@@ -1,6 +1,6 @@
 {
   "name": "jp-prefectures",
-  "version": "1.0.5",
+  "version": "2.0.1",
   "description": "You can easily handle the prefectures of Japan.",
   "main": "./dist/src/jp-prefectures.js",
   "types": "./dist/src/jp-prefectures.d.ts",
